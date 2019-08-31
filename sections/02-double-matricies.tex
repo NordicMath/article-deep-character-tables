@@ -1,0 +1,112 @@
+
+\section{Double Matricies}
+
+\begin{definition}
+  We define a \defhl{$(m, n)$ double matrix} as an ordered pair of a $m \times m$ matrix and a $n \times n$ matrix. We write the latter in the right lower corner of first.
+\end{definition}
+
+\begin{example}
+  This is a $(2, 1)$ double matrix:
+  $$\begin{bmatrix}
+    2 & 2 & \\ 
+    3 & 4 & \\
+    & & 1 \\
+  \end{bmatrix}$$
+\end{example}
+
+\begin{definition}
+  We define product and sum, and both inverses pairwise. Also multiplication with constants is pointwise.
+\end{definition}
+
+\begin{example}
+  $$\begin{bmatrix}
+    2 & 2 & \\ 
+    3 & 4 & \\
+    & & 1 \\
+  \end{bmatrix} + \begin{bmatrix}
+    1 & 4 & \\ 
+    2 & 2 & \\
+    & & 2 \\
+  \end{bmatrix} = \begin{bmatrix}
+    3 & 6 & \\ 
+    5 & 6 & \\
+    & & 3 \\
+  \end{bmatrix}$$
+  $$\begin{bmatrix}
+    2 & 2 & \\ 
+    3 & 4 & \\
+    & & 1 \\
+  \end{bmatrix} \times \begin{bmatrix}
+    1 & 4 & \\ 
+    2 & 2 & \\
+    & & 2 \\
+  \end{bmatrix} = \begin{bmatrix}
+    6 & 12 & \\ 
+    11 & 20 & \\
+    & & 2 \\
+  \end{bmatrix}$$
+  $$2\begin{bmatrix}
+    2 & 2 & \\ 
+    3 & 4 & \\
+    & & 1 \\
+  \end{bmatrix} = \begin{bmatrix}
+    4 & 4 & \\ 
+    6 & 8 & \\
+    & & 2 \\
+  \end{bmatrix}$$
+  $$\begin{bmatrix}
+    2 & 2 & \\ 
+    3 & 4 & \\
+    & & 1 \\
+  \end{bmatrix}^{-1} = \begin{bmatrix}
+    4\frac{1}{2} & -3\frac{1}{2} & \\ 
+    -2\frac{1}{2} & 2\frac{1}{2} & \\
+    & & 1 \\
+  \end{bmatrix} = \begin{bmatrix}
+    2 & \frac{-3}{2} & \\ 
+    -1 & 1 & \\
+    & & 1 \\
+  \end{bmatrix}$$
+\end{example}
+
+\begin{definition}
+  The following matrix is the identity:
+  $$I_{(m, n)} = \begin{bmatrix}
+    I_m & \\ & I_n \\
+  \end{bmatrix}$$
+\end{definition}
+
+\begin{definition}
+  We have: 
+  $$\det \begin{bmatrix}
+    A & \\ & B \\
+  \end{bmatrix} = \frac{\det A}{\det B}$$
+  $$\text{tr} \begin{bmatrix}
+    A & \\ & B \\
+  \end{bmatrix} = \text{tr} A - \text{tr} B$$
+\end{definition}
+
+\begin{definition}
+  We define the characteristic function:
+  $$\text{char} C = \det(C - tI)$$
+\end{definition}
+
+\begin{example}
+  $$\text{char} \begin{bmatrix}
+  0 & 2 & \\ 
+  2 & 0 & \\
+    & & 1 \\
+  \end{bmatrix} = \frac{t^2 - 4}{1 - t} = \frac{-(-2 - t)(2 - t)}{1 - t}$$
+\end{example}
+
+\begin{definition}
+  This rational function defines a Tanakian symbol $\text{ts} C$.
+\end{definition}
+
+\begin{example}
+  $$\text{ts} \begin{bmatrix}
+    2 & 2 & \\ 
+    3 & 4 & \\
+    & & 1 \\
+  \end{bmatrix} = \frac{\{-2, 2\}}{\{1\}}$$
+\end{example}
